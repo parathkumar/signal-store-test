@@ -1,0 +1,26 @@
+.st-flex {
+  display: flex;
+  &__row {
+    flex-direction: row;
+    &--reverse{
+        flex-direction: row-reverse;
+    }
+  }
+  &__column {
+    flex-direction: column;
+  }
+  &__gap {
+    &--small {
+      gap: 0.5rem;
+    }
+    &--1 {
+      gap: 1rem;
+    }
+    &--2 {
+      gap: 2rem;
+    }
+  }
+  &__space-between {
+    justify-content: space-between;
+  }
+}

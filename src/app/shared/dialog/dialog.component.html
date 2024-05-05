@@ -1,0 +1,9 @@
+<dialog #detailsModal>
+    <div class="st-flex st-flex__space-between">
+        <div class="st__heading">{{ heading() }}</div>
+        <div class="st__pointer" (click)="detailsModal.close()">
+            <span class="material-icons">close</span>
+        </div>
+    </div>
+    <ng-content></ng-content>
+</dialog>

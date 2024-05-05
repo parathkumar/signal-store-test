@@ -1,0 +1,10 @@
+@if(!store.isLoading()){ 
+    <div class="st-flex st-flex__column st-flex__gap--1">
+        @for(post of store.postsWithUsers(); track post.id)  {
+            <st-post-item [details]="post" />
+        }
+    </div>
+} 
+@else { 
+    still loading......
+}

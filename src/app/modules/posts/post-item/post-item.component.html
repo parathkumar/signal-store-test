@@ -1,0 +1,17 @@
+<div class="post-item__card" (click)="detailsModal.openDialog()">
+  <p>
+    <b>{{ details().title }}</b>
+  </p>
+  <p>{{ details().body }}</p>
+</div>
+
+<st-dialog #detailsModal heading="Details">
+  <p>
+    <b>{{ details().title }}</b>
+  </p>
+  <p>{{ details().body }}</p>
+  <div><i><b>-{{ details().user?.name}}</b></i></div>
+  <div class="st-flex st-flex__row--reverse">
+    <button class="pure-button pure-button-primary" (click)="detailsModal.closeDialog()">submit</button>
+  </div>
+</st-dialog>
