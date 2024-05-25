@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { postsStore } from './posts.store';
 import { JsonPipe } from '@angular/common';
 import { PostItemComponent } from "./post-item/post-item.component";
@@ -10,7 +10,8 @@ import { userStore } from '../../common/global-store/users/users.store';
     templateUrl: './posts.component.html',
     styleUrl: './posts.component.scss',
     providers: [postsStore, userStore],
-    imports: [PostItemComponent,JsonPipe]
+    imports: [PostItemComponent,JsonPipe],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PostsComponent{
   store = inject(postsStore);

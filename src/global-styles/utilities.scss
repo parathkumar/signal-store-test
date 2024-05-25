@@ -2,6 +2,24 @@
   &__pointer {
     cursor: pointer;
   }
+  &-p {
+    &--small{
+      padding: 0.5rem;
+    }
+    &--1{
+      padding: 1rem;
+    }
+    &-l {
+      &--small{
+        padding: 0.5rem;
+      }
+    }
+  }
+  &__font {
+    &--weight {
+      font-weight: 600;
+    }
+  }
   &__heading {
     font-size: x-large;
     font-weight: 600;

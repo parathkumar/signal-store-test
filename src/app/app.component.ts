@@ -10,5 +10,4 @@ import { PostsComponent } from "./modules/posts/posts.component";
     imports: [RouterOutlet, PostsComponent]
 })
 export class AppComponent {
-  title = 'signal-store-test';
 }
